@@ -70,12 +70,15 @@ public class QuestionController implements Initializable {
     @FXML
     private void addAnswerToQuestion() {
 
-        if (txtNameQuestion.getText() != null && !txtNameQuestion.getText().trim().isEmpty()) {
+        if (txtNameAnswer.getText() != null && !txtNameAnswer.getText().trim().isEmpty()) {
             Answer answer = new Answer(txtNameAnswer.getText());
             if (!answerObservableList.contains(answer)) {
                 answerObservableList.add(answer);
                 txtNameAnswer.clear();
             }
+        }
+        else {
+            Utils.showDialog(Alert.AlertType.ERROR, "Escriba una respuesta por favor.");
         }
 
 
@@ -86,10 +89,10 @@ public class QuestionController implements Initializable {
 
         if (txtNameQuestion.getText() == null && txtNameQuestion.getText().trim().isEmpty()) {
 
-            System.out.println("El nombre de la prueba es obligatorio");
+            Utils.showDialog(Alert.AlertType.ERROR, "El nombre de la prueba es obligatorio.");
 
         } else if (answerObservableList.isEmpty()) {
-            System.out.println("La pregunta tiene que tener al menos una respuesta");
+            Utils.showDialog(Alert.AlertType.WARNING, "La pregunta tiene que tener al menos una respuesta.");
         } else {
             Question question = new Question(txtNameQuestion.getText(), answerObservableList.size(),
                      new ArrayList<>(answerObservableList));
