@@ -61,7 +61,7 @@
       <Label layoutX="23.0" layoutY="169.0" text="Nombre del Examen" />
       <TextField fx:id="textName" layoutX="159.0" layoutY="164.0" prefHeight="27.0" prefWidth="483.0" />
       <Button fx:id="btnAddQuestion" layoutX="42.0" layoutY="252.0" mnemonicParsing="false" onAction="#loadQuestion" prefHeight="27.0" prefWidth="180.0" text="Agregar Pregunta" />
-      <Button fx:id="btnSaveTest" layoutX="804.0" layoutY="164.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="107.0" text="Crear examen" onAction="#createTest"/>
+      <Button fx:id="btnSaveTest" layoutX="804.0" layoutY="164.0" mnemonicParsing="false" onAction="#createTest" prefHeight="27.0" prefWidth="107.0" text="Crear examen" />
       <Label layoutX="660.0" layoutY="169.0" text="Cantidad" />
       <TextField fx:id="testCount" layoutX="730.0" layoutY="164.0" prefHeight="27.0" prefWidth="38.0" />
    </children>

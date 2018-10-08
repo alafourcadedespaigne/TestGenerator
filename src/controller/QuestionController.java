@@ -12,6 +12,7 @@ import model.Question;
 import utils.Utils;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class QuestionController implements Initializable {
@@ -90,8 +91,8 @@ public class QuestionController implements Initializable {
         } else if (answerObservableList.isEmpty()) {
             System.out.println("La pregunta tiene que tener al menos una respuesta");
         } else {
-            Question question = new Question(txtNameQuestion.getText(), answerObservableList.size());
-            question.setAnswers(answerObservableList);
+            Question question = new Question(txtNameQuestion.getText(), answerObservableList.size(),
+                     new ArrayList<>(answerObservableList));
             testController.receiveDataFromQuestion(question);
             closeButtonClicks();
         }

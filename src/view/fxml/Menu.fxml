@@ -38,12 +38,12 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btnCreateTest" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleButtonClicks"  prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Dashboard">
+            <Button fx:id="btnCreateTest" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleButtonClicks"  prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Creación Exámenes">
                <graphic>
                   <FontAwesomeIconView fill="#2d75e8" glyphName="HOME" size="50" />
                </graphic>
             </Button>
-            <Button fx:id="btnStudents" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Students" GridPane.columnIndex="1">
+            <Button fx:id="btnStudents" contentDisplay="TOP" mnemonicParsing="false"  prefHeight="181.0" prefWidth="242.0" stylesheets="@../css/fullpackstyling.css" text="Estudiantes" GridPane.columnIndex="1">
                <graphic>
                   <FontAwesomeIconView fill="#2d75e8" glyphName="GROUP" size="50" />
                </graphic>

@@ -9,18 +9,17 @@ public class Question {
 
     private StringProperty name;
     private IntegerProperty count;
-    private List<Answer> answers = new ArrayList<>();
+    private List<Answer> answers;
 
-    public Question(String name, Integer count) {
+    public Question(){}
+
+    public Question(String name, Integer count, List<Answer> answers) {
         this.name = new SimpleStringProperty(name);
         this.count = new SimpleIntegerProperty(count);
+        this.answers = new ArrayList<>(answers);
 
     }
 
-    public Question(String name, IntegerProperty count) {
-        this.name = new SimpleStringProperty(name);
-        this.count = count;
-    }
 
     public String getName() {
         return name.get();

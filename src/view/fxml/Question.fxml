@@ -6,7 +6,17 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="609.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuestionController">
    <children>
@@ -47,12 +57,12 @@
             </GridPane>
         </items>
       </SplitPane>
-      <Label  layoutX="52.0" layoutY="213.0" text="Nombre" />
+      <Label layoutX="52.0" layoutY="213.0" text="Nombre" />
       <TextField fx:id="txtNameQuestion" layoutX="121.0" layoutY="208.0" prefHeight="27.0" prefWidth="617.0" />
-      <Button fx:id="btnSaveTest" layoutX="756.0" layoutY="258.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="68.0" text="Agregar" onAction="#addAnswerToQuestion"/>
+      <Button fx:id="btnAddQuestion" layoutX="756.0" layoutY="258.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="68.0" text="Agregar" onAction="#addAnswerToQuestion"/>
       <TextField fx:id="txtNameAnswer" layoutX="121.0" layoutY="258.0" prefHeight="27.0" prefWidth="617.0" />
       <Text layoutX="46.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Respuesta" />
-      <Button fx:id="btnCreateQuestion" layoutX="290.0" layoutY="166.0" mnemonicParsing="false" text="Crear Pregunta" onAction="#addQuestionToTest"/>
-      <Button fx:id="btnCloseButton" layoutX="407.0" layoutY="166.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" text="Cancelar" onAction="#closeButtonClicks"/>
+      <Button  layoutX="290.0" layoutY="166.0" mnemonicParsing="false" text="Crear Pregunta" onAction="#addQuestionToTest"/>
+      <Button fx:id="btnCloseButton" layoutX="407.0" layoutY="166.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="112.0" text="Cancelar" />
    </children>
 </AnchorPane>
